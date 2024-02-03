@@ -1,0 +1,553 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy</title>
+    <!-- <link rel="stylesheet" href="F:\flask23\complete\templates\style.css"> -->
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;1,100;1,200;1,400;1,600&display=swap"
+        rel="stylesheet">
+    <!-- <link rel="stylesheet" href='{% static "styles/style.css" %}'> -->
+    <style>
+        
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(16, 24, 55, 0.7), rgba(12, 63, 83, 0.7)), url(https://www.psghospitals.com/wp-content/uploads/2022/08/pharmacy.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    padding-left: 3% ;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 150px;
+}
+
+.nav-links {
+    margin-top: 10px;
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+
+}
+
+.nav-links ul li::after {
+    
+    content: '';
+    width: 0%;
+    height: 3px;
+    background-color: #1991f2;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+.nav-links ul li a:hover{
+font-weight: 700;
+}
+.nav-links ul li:hover::after {
+    width: 100%;
+    
+    /* transition: 0.3s; */
+}
+.nav-links ul li a{
+font-family: 'Roboto', sans-serif;
+font-family: 'Rubik', sans-serif;
+}
+.text-box form {
+display: inline-block;
+}
+.text-box {
+    width: 800px;
+    color: #fff;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.text-box h1 {
+    font-size: 4vw;
+}
+
+.text-box p {
+    margin: 10px 0px 40px;
+    font-size: 1vw;
+    color: #fff;
+    width: 700px;
+}
+
+.hero-btn {
+    display: inline-block;
+
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+
+}
+
+.entire_box {
+    /* position: relative; */
+    /* text-align: center; */
+    /* width: 700px; */
+    /* left: 10%; */
+    width: 40vw;
+    display: inline-block;
+}
+
+.ddd {
+    position: relative;
+}
+.search_bar{
+    height: 40px;
+    width: 45vw;
+    /* margin-bottom: 10px; */
+    /* position: relative;
+    right: 30px; */
+    /* left: 1%; */
+}
+.eleme{
+    padding-left: 7vw;
+    /* margin: 5px; */
+    margin-top: 10px;
+    
+}
+.ser {
+    outline: inherit;
+    border: 1.6px solid black ;
+    border-left: none;
+    font-size:19px;
+    background-color: #3bdcf5;
+    font-weight: 550;
+    /* border-radius: 10px; */
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+/* display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap; */
+text-align: center;
+    /* padding: 2px; */
+    padding-top: 3px;
+    padding-bottom:9px ;
+    /* pad */
+    /* padding-left: 10px;
+    padding-right: 10px; */
+    cursor: pointer;
+    margin-left: 0px;
+    position: relative;
+    right: 6px;
+    /* top: 1px; */
+    /* top: 0.5px; */
+    bottom: 3px;
+    width: 3.6vw;
+}
+
+.ser i {
+    /* size: 150px; */
+    position: relative;
+    top: 5px;
+    font-size: 1.5vw;
+}
+
+
+.mainbar {
+    position: relative;
+    margin-right: 0px;
+    outline-style: none;
+    padding-left: 15px;
+    /* padding-left: 10px; */
+    font-size: 20px;
+    font-weight: 400;
+    width: 33.8vw;
+    border: 1.6px solid black;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.entire_box ul {
+    margin: 0px;
+    padding: 0px;
+    width: 38.3vw;
+    position: relative;
+    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1.6px solid black; */
+    /* left: 10%; */
+    left: 7.7%;
+    /* align-items: center; */
+}
+
+.entire_box li {
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    height: 25px;
+    /* left: 5.7%; */
+    list-style: none;
+    padding: 10px;
+    padding-left: 15px;
+    color: black;
+    cursor: pointer;
+}
+
+.entire_box li a {
+    text-decoration: none;
+
+}
+
+.updt {
+    color: black;
+    text-align: left;
+}
+
+
+
+.entire_box li:hover {
+    background-color: rgb(159, 244, 247);
+
+}
+.bar_ul{
+/* display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center; */
+/* width: 68vw; */
+/* display: flex;
+align-items: center; */
+position: relative;
+right: 2.5vw;
+width: 100%;
+
+}
+.sel_box {
+    display: flex;
+    position: relative;
+    width: 68vw;
+    /* left: 10%; */
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.sel_box ul {
+    text-align: left;
+    
+}
+
+.sel_box ul li {
+    color: black;
+    list-style: none;
+    display: inline-block;
+    background-color: #4ee1f8;
+    margin: 2px;
+    margin-left: 5px;
+    /* margin-bottom: 5px; */
+    border-radius: 7px;
+    padding: 6px;
+    font-weight: 550;
+    font-size: 1vw;
+
+}
+.logo {
+    top: -5px;
+    position: absolute;
+    height: 155px;
+    width: 119px;
+}
+
+    </style>
+</head>
+
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="#"><img src="{% static 'images/logo.svg'%}" alt="logo" class="logo" id="logo_main"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="/stock">STOCK</a></li>
+                    <li><a href="/portfolio">ABOUT</a></li>
+                    <!-- <li><a href="#">BLOG</a></li> -->
+                    <li><a href="/contact">CONTACT US</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="text-box">
+
+            <h1>Get Your Right Medicine</h1>
+            <div class="bar_ul">
+
+                <div class="entire_box">
+                    <form method="POST" action="/results">
+                        {% csrf_token %}
+                        <div class="search_bar">
+
+                            <input type="text" id="mainadd" class="mainbar">
+                            <input type="hidden" id="elementsInput" name="elements" value="">
+                            <button type="submit" class="ser"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                        <!-- <button type="submit">Submit</button> -->
+                    </form>
+                    <ul id="mainlist" class="toaddli">
+                        <!-- <li class="updt">hello</li>
+            <li class="updt">hello</li>
+            <li class="updt">hello</li> -->
+                        <!-- <li>hello</li>
+            <li>hello</li>
+            <li>hello</li>
+            <li>hello</li> -->
+
+                    </ul>
+                    <!-- <script>
+                    // Access the JavaScript array and display elements
+                    const elementList = document.getElementById("elementList");
+                    const elementsInput = document.getElementById("elementsInput");
+                    const elementsArrayString = JSON.stringify(selected_syms);
+                    elementsInput.value = elementsArrayString;
+                    // </script> -->
+                </div>
+            </div>
+            <div class="sel_box">
+                <ul class="eleme">
+
+                </ul>
+            </div>
+            <p class="bar_desc">Enter your symptoms that you feel and get the right medicine which was preferred by <br>
+                highly qualified
+                doctors</p>
+            <a href="" class="hero-btn">Click here too Know more</a>
+        </div>
+    </section>
+    <!-- <script src="{% static 'js/data.js' %}"></script> -->
+    <script>
+        var v = [];
+
+        ls = ['sneezing', 'cough', 'cold', 'difficulty breathing', 'bodypains', 'inflammation', 'headache', 'fever', 'mild fever', 'high fever', 'watery eyes', 'ear pain', 'vomiting', 'motions', 'diarrhea', 'high BP', 'sleep illness', 'joint pain', 'swelling', 'nausea', 'runny nose', 'skin rash', 'allergies', 'sore throat', 'throat infection', 'muscle contraction', 'skin redness', 'dry skin', 'constipation', 'back pain', 'throat infection', 'mouth ulcer', 'hair fall', 'dandruff', 'eye redness', 'dry eyes', 'low immunity', 'energy++', 'weakness', 'stomach pain', 'stuffed nose', 'nose blockage', 'wounds', 'cracked heels', 'firstaid']
+        var selected_syms = [];
+        
+        var ele = document.querySelector('.mainbar')
+        function hel(a) {
+            var se_ele = document.querySelector('.ser');
+            se_ele.style.borderBottomRightRadius = "20px";
+            selected_syms.push(a.innerText);a
+            elementsInput.value = selected_syms;
+        
+            ele.style.borderBottomLeftRadius = "20px";
+            var l = document.createElement('li')
+            l.setAttribute('class', 'addedsy');
+            l.innerHTML = a.innerText + ' <i class="fa-solid sym_cancel fa-x"></i>';
+            var d = document.querySelector('.eleme');
+            d.appendChild(l);
+            l.addEventListener('click', () => {
+                v.push(l.innerText);
+                l.style.display = 'none';
+        
+            })
+            var ee = document.querySelector('#mainadd');
+            ee.value = '';
+            var list_ele = document.querySelector('#mainlist')
+            if (list_ele) list_ele.remove();
+        }
+        ele.addEventListener('keyup', () => {
+        
+            var list_ele = document.querySelector('#mainlist');
+            if (list_ele) list_ele.remove();
+            var ee = document.querySelector('#mainadd').value;
+            var se_ele = document.querySelector('.ser');
+            se_ele.style.borderBottomRightRadius = "0px";
+        
+            ele.style.borderBottomLeftRadius = "0px";
+            var format_ls = ee.toLowerCase()
+            var ct = 0;
+            for (var i = 0; i < ls.length; i++) {
+                if (ls[i].startsWith(format_ls) == true && format_ls != '') {
+                    ct++;
+                    if (ct == 1) {
+                        var ull = document.createElement('ul')
+                        ull.setAttribute("id", "mainlist")
+                        var div = document.querySelector('.entire_box')
+                        div.append(ull);
+                    }
+                    if (ct > 5) break;
+                    var ll = document.createElement('li')
+                    ll.setAttribute("class", "updt")
+                    ll.innerHTML = ls[i];
+                    ull.append(ll);
+        
+                }
+        
+            }
+            if (ct > 0) {
+                ull.style.border = "1.6px solid black"
+                ull.style.borderTop = "0.5px solid black"
+            } else {
+        
+                let liss = document.querySelector('.mainbar');
+                let sse = document.querySelector('.ser');
+                liss.style.borderBottomLeftRadius = "20px";
+                liss.style.bordertopLeftRadius = "20px";
+                sse.style.bordertopRightRadius = "20px";
+                sse.style.borderBottomRightRadius = "20px";
+        
+        
+                ull.style.border = "none"
+        
+            }
+        
+            var addons = document.querySelectorAll('.updt');
+            var n = addons.length;
+        
+        
+        
+        
+            if (n > 0) {
+        
+                addons[n - 1].style.borderBottomLeftRadius = "7px";
+                addons[n - 1].style.borderBottomRightRadius = "7px";
+            }
+        
+            addons.forEach(button => button.addEventListener('click', () => {
+        
+                hel(button);
+            }));
+        
+            console.log('******', selected_syms, '********');
+            elementsInput.value = selected_syms;
+        
+        
+        
+        
+        })
+        
+        // function comp( a, b){
+        //     k=1;
+        // if(a.length+1!==b.length) {
+        
+        //     console.log(a.length,b.length,'length');
+        //     console.log(a);
+        //     console.log(b);
+        //     return 0;
+        // }
+        
+        // else{
+        //     for(let i=0;i<a.length;i++){
+        //         if(a[0]!==b[0]) {
+        //             k=0;
+        //             console.log('char ,ismatch')
+        //             return 0;
+        //         }
+        //     }
+        
+        // }
+        // return 1;
+        // }
+        let ser_btn = document.querySelector('.ser');
+        ser_btn.addEventListener('click', () => {
+            const filteredSyms = selected_syms.filter(sym => !v.includes(sym + ' '));
+            selected_syms = filteredSyms;
+            const elementsInput = document.getElementById("elementsInput");
+        
+            const elementsArrayString = JSON.stringify(selected_syms);
+            // console.log(selected_syms,'last');
+            // console.log(filteredSyms,'last_fil');
+            // console.log(typeof(selected_syms[0]),typeof(v[0]),comp(selected_syms[0],v[0]));
+            // console.log(v,'last');  
+            console.log(elementsArrayString, 'last');
+            elementsInput.value = elementsArrayString;
+        })
+        
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Access JavaScript Array in Flask</title>
+</head>
+<body>
+    <h1>Elements List</h1>
+    <ul id="elementList"></ul>
+    <script>
+        async function fetchElements() {
+            try {
+                const response = await fetch('/api/elements');
+                if (!response.ok) {
+                    throw new Error('Failed to fetch elements');
+                }
+                const elements = await response.json();
+                const elementList = document.getElementById("elementList");
+                elements.forEach(element => {
+                    const li = document.createElement("li");
+                    li.textContent = element;
+                    elementList.appendChild(li);
+                });
+            } catch (error) {
+                console.error(error);
+            }
+        }
+
+        fetchElements();
+    </script>
+</body>
+</html> -->

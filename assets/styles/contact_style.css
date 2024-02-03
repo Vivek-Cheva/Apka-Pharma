@@ -1,0 +1,135 @@
+
+        .maindiv ul {
+            display: flex;
+        }
+    
+        .maindiv ul li {
+            margin: 5px;
+            display: inline-block;
+            list-style: none;
+        }
+    
+        .maindiv ul li a {
+            text-decoration: none;
+            font-size: 25px;
+            color: black;
+        }
+    
+        .maindiv .fdiv, .maindiv .tdiv, .maindiv .ldiv, .maindiv .gdiv {
+            position: relative;
+        }
+    
+        /* .maindiv .fdiv::before, .maindiv .tdiv::before, .maindiv .ldiv::before, .maindiv .gdiv::before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            border-radius: 50%;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 0;
+            background-color: aqua; /* Color of the shutter */
+            /* transition: height 0.3s; */
+         
+        .maindiv ul div::before{
+            content: "";
+            position: absolute;
+            z-index: -1;
+            border-radius: 50%;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 0;
+            transition: all 0.3s;
+        
+
+        }
+        .maindiv ul div:hover::before{
+
+            height: 100%;
+        }
+        
+        .maindiv .fdiv::before{
+            background-color:#3b5998; 
+        }
+        .maindiv .tdiv::before{
+            background-color:#1da1f2; 
+        }
+        .maindiv .ldiv::before{
+            background-color:#0077b5; 
+        }
+        .maindiv .gdiv::before{
+            background-color:#333; 
+        }
+        /* .maindiv .fdiv:hover::before, .maindiv .tdiv:hover::before, .maindiv .ldiv:hover::before, .maindiv .gdiv:hover::before {
+            height: 100%;
+        } */
+    .maindiv{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 38%;
+
+    }
+    h2{
+        display: block;
+    }
+        .maindiv div {
+            margin: 10px;
+            border-radius: 50%;
+            border: 2px solid black;
+            height: 70px;
+            width: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        .upp {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 90vh;
+            width: 95vw;
+        }
+        
+        .nav-bar{
+            display: flex;
+            /* align-items: end; */
+            justify-content: end;
+            margin-bottom: 50px;
+            /* margin-left: 20px; */
+        }
+        .nav-bar li{
+            list-style: none;
+            margin: 10px;
+        }
+        .nav-bar li a{
+           color: black;
+            text-decoration: none;
+        }
+        .nav-bar li::after{
+            display: block;
+            width: 0;
+            content: '';
+            height: 2px;
+            background-color: #0077b5;
+            transition: all 0.5s;
+        }
+        .nav-bar li:hover::after{
+            width: 100%;
+        }
+        img{
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            border: 2px solid black;
+            display: block;
+            position: relative;
+            left: 42%;
+            /* bottom: 30%; */
+        }
+        /* .heading{
+            display: block;
+        } */

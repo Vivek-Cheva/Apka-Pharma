@@ -1,0 +1,226 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Apka Pharma</title>
+
+    <style>
+        /* Additional inline styles can be added here if needed */
+
+        .header {
+
+            width: 100%;
+            position: fixed;
+            top: 0px;
+            z-index: 2;
+
+        }
+
+        nav {
+            display: flex;
+            padding: 2% 6%;
+            margin-right: 13px;
+            padding-left: 3%;
+            height: 40px;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(79, 208, 255);
+            border-radius: 30px;
+        }
+
+        nav img {
+            width: 150px;
+        }
+
+        .nav-links {
+            margin-top: 10px;
+            flex: 1;
+            text-align: right;
+        }
+
+        .nav-links ul li {
+            list-style: none;
+            display: inline-block;
+            padding: 8px 12px;
+            position: relative;
+        }
+
+        .nav-links ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 15px;
+
+        }
+
+        .nav-links ul li::after {
+
+            content: '';
+            width: 0%;
+            height: 3px;
+            background-color: #1991f2;
+            display: block;
+            margin: auto;
+            transition: 0.3s;
+        }
+
+        .nav-links ul li a:hover {
+            font-weight: 700;
+        }
+
+        .nav-links ul li:hover::after {
+            width: 100%;
+
+            /* transition: 0.3s; */
+        }
+
+        .nav-links ul li a {
+            font-family: 'Roboto', sans-serif;
+            font-family: 'Rubik', sans-serif;
+        }
+
+        .logo {
+            top: -20px;
+            position: absolute;
+            height: 155px;
+            width: 119px;
+        }
+
+        p {
+            font-size: 17px;
+        }
+
+        #key-features li {
+            font-size: 17px;
+        }
+
+        #technology-stack li {
+            font-size: 17px;
+        }
+
+        .content {
+            position: relative;
+            top: 90px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="/"><img src="{% static 'images/logo.svg'%}" alt="logo" class="logo" id="logo_main"></a>
+
+            <div class="nav-links">
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/stock">STOCK</a></li>
+                    <li><a href="/portfolio">ABOUT</a></li>
+                    <!-- <li><a href="#">BLOG</a></li> -->
+                    <li><a href="/contact">CONTACT US</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <!-- <header> -->
+    <!-- </header> -->
+    <div class="content">
+        <h1>About Apka Pharma</h1>
+        <p>Welcome to Apka Pharma, a pioneering venture at the intersection of healthcare and technology. At Apka
+            Pharma, we are committed to reshaping the landscape of pharmacy management by introducing a holistic,
+            intelligent, and user-centric approach. Dive into the world of Apka Pharma to discover how we are redefining
+            the future of healthcare.</p>
+
+
+        <section id="vision-mission">
+            <h2>Vision and Mission</h2>
+            <p>At Apka Pharma, we envision a future where healthcare transcends traditional boundaries. We see a world
+                where
+                technology and compassion converge to redefine the healthcare experience. Our goal is to empower
+                individuals
+                with intelligent, data-driven solutions that go beyond mere treatment, fostering a proactive and
+                personalized approach to well-being. As pioneers in the digital healthcare revolution, we aspire to
+                provide
+                cutting-edge technologies to every individual, shaping a society where well-being is a collaborative and
+                informed journey.</p>
+            <!-- <br> -->
+            <p>Our mission at Apka Pharma is to simplify and elevate healthcare experiences through innovation. We are
+                dedicated to bridging the gap between technology and healthcare services, offering a comprehensive
+                platform
+                that transforms pharmacy management and predictive analytics. We aim to provide individuals with a
+                user-centric, intelligent pharmacy management system that not only addresses their immediate health
+                needs
+                but also empowers them to make informed decisions about their overall well-being. Through our mission,
+                we
+                strive to contribute to a healthcare landscape where technology serves as an enabler, bringing
+                efficiency,
+                accessibility, and personalization to the forefront.</p>
+            <!-- Add more content as needed -->
+        </section>
+
+        <section id="key-features">
+            <h2>Key Features</h2>
+            <ul>
+                <li><strong>Predictive Analytics:</strong> Harnessing the power of JavaScript, Django, SQL, HTML/CSS,
+                    and
+                    Python, Apka Pharma delivers a state-of-the-art predictive analytics platform. This enables us to
+                    analyze symptoms effectively and offer tailored medicine recommendations.</li>
+                <br>
+                <li><strong>Comprehensive Database:</strong> Apka Pharma boasts a robust and dynamic database system
+                    that
+                    ensures accurate and real-time information. This not only aids in precise medicine recommendations
+                    but
+                    also facilitates efficient stock management, contributing to an optimal pharmacy experience.</li>
+                <br>
+                <li><strong>Intelligent Medicine Recommendations:</strong> The heart of Apka Pharma lies in its ability
+                    to
+                    process entered symptoms intelligently. Our system goes beyond mere data analysis, providing users
+                    with
+                    personalized and precise medicine recommendations based on their unique health indicators.</li>
+            </ul>
+        </section>
+
+        <section id="technology-stack">
+            <h2>Technology Stack</h2>
+
+            <ul>
+                <li><strong>Python:</strong>The backbone of our backend, Python enables us to process complex algorithms
+                    and
+                    deliver accurate predictive analytics.</li>
+                <br>
+                <li><strong>Django:</strong> Our choice of the Django framework ensures scalability, security, and rapid
+                    development, creating a robust web application.</li>
+                <br>
+                <li><strong>SQL:</strong>The database management system is powered by SQL, ensuring efficient data
+                    handling
+                    and retrieval.</li>
+                <br>
+                <li><strong>HTML/CSS and JavaScript:</strong>The frontend is designed with a focus on user experience,
+                    utilizing HTML/CSS and JavaScript to create an intuitive and responsive interface.</li>
+                <!-- <br> -->
+            </ul>
+        </section>
+
+        <section id="join-us">
+            <h2>Join Us on the Journey</h2>
+            <p>Whether you are a healthcare professional, a tech enthusiast, or someone passionate about making a
+                positive
+                impact, Apka Pharma invites you to be a part of our journey. Together, let's explore the possibilities
+                of
+                intelligent pharmacy management and predictive analytics.
+                Embrace the future of healthcare with Apka Pharma - where innovation meets compassion, and technology
+                meets
+                well-being.
+            </p>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Apka Pharma. All rights reserved. </p>
+        </footer>
+    </div>
+
+</body>
+
+</html>

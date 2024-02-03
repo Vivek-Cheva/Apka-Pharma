@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Update-Form</title>
+        <link rel="stylesheet" href="{% static 'styles/updatepage.css' %}"> 
+    </head>
+    <body>
+        <div class="nav-bar">
+        
+
+            <li><a href="/">HOME</a></li>
+            <li><a href="/stock">STOCK</a></li>
+            <li><a href="/portfolio">ABOUT</a></li>
+            <li><a href="/contact">CONTACT US</a></li>
+        
+    </div>
+        <div class="todo-container">
+            <h1>Update Form</h1>
+            <form action="/update/{{med.sno}}/" method="POST">
+                {% csrf_token %}
+                <input type="text" id="taskInput" class="todo-input" value="{{med.medicines}}" name="medicine" placeholder="Medicine">
+                <input type="text" id="dueDateInput" class="todo-input" name="symptoms" value="{{med.symptoms}}" placeholder="symptoms">
+                <input type="text" id="dueDateInput" class="todo-input" name="Components" value="{{med.components}}" placeholder="Components">
+                <input type="text" id="dueDateInput" class="todo-input" name="price" value="{{med.price}}" placeholder="price">
+                <!-- <input type="text" id="howToDoInput" class="todo-input" placeholder="How to do"> -->
+                <!-- <button onclick="addTask()" class="add-button">Add</button> -->
+                <button type="submit" class="add-button">update</button>
+            </form>
+        </div>
+        </body>
+</html>

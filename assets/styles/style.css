@@ -1,0 +1,215 @@
+
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .header {
+        min-height: 100vh;
+        width: 100%;
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(https://www.psghospitals.com/wp-content/uploads/2022/08/pharmacy.jpg);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+
+    nav {
+        display: flex;
+        padding: 2% 6%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav img {
+        width: 150px;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+        flex: 1;
+        text-align: right;
+    }
+
+    .nav-links ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 8px 12px;
+        position: relative;
+    }
+
+    .nav-links ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 15px;
+    }
+
+    .nav-links ul li::after {
+        content: '';
+        width: 0%;
+        height: 2px;
+        background-color: #00baf2;
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+    }
+
+    .nav-links ul li:hover::after {
+        width: 100%;
+    }
+
+    .text-box {
+        width: 900px;
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .text-box h1 {
+        font-size: 62px;
+    }
+
+    .text-box p {
+        margin: 10px 0px 40px;
+        font-size: 14px;
+        color: #fff;
+    }
+
+    .hero-btn {
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        border: 1px solid #fff;
+        padding: 12px 34px;
+        font-size: 13px;
+        background: transparent;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .hero-btn:hover {
+        border: 1px solid #f44336;
+        background: #f44336;
+        transition: 1s;
+
+    }
+
+    .entire_box {
+        position: relative;
+        text-align: center;
+        width: 700px;
+        left: 10%;
+    }
+
+    .ddd {
+        position: relative;
+    }
+
+    .ser {
+        font-size: 18px;
+        background-color: #3bdcf5;
+        font-weight: 550;
+        /* border-radius: 10px; */
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+
+        padding: 6px;
+        /* pad */
+        padding-left: 10px;
+        padding-right: 10px;
+        cursor: pointer;
+        margin-left: 0px;
+        position: relative;
+        right: 6px;
+    }
+
+    .ser i {
+        /* size: 150px; */
+        position: relative;
+        top: 4px;
+        font-size: 24px;
+    }
+
+    .mainbar {
+        /* position: absolute; */
+        margin-right: 0px;
+        outline-style: none;
+        padding: 0px;
+        padding-left: 10px;
+        font-size: 20px;
+        font-weight: 400;
+        width: 80%;
+        height: 40px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .entire_box ul {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .entire_box li a {
+        text-decoration: none;
+
+    }
+
+    .updt {
+        color: black;
+        text-align: left;
+    }
+
+    .entire_box li {
+
+
+        position: relative;
+        width: 84.3%;
+        background-color: #fff;
+        height: 25px;
+        left: 5.7%;
+        list-style: none;
+        padding: 10px;
+        padding-left: 15px;
+        color: black;
+        cursor: pointer;
+    }
+
+    .entire_box li:hover {
+        background-color: rgb(159, 244, 247);
+
+    }
+
+    .sel_box {
+        display: flex;
+        position: relative;
+        width: 600px;
+        left: 10%;
+    }
+
+    .sel_box ul {
+        text-align: left;
+    }
+
+    .sel_box ul li {
+        color: black;
+        list-style: none;
+        display: inline-block;
+        background-color: #4ee1f8;
+        margin: 2px;
+        margin-left: 5px;
+        /* margin-bottom: 5px; */
+        border-radius: 7px;
+        padding: 6px;
+        font-weight: 550;
+
+    }
+
+    .logo {
+        top: 30px;
+        position: absolute;
+        height: 100px;
+        width: 100px;
+    }

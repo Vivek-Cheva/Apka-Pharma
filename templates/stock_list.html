@@ -1,0 +1,187 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock-List</title>
+    <!-- <link rel="stylesheet" href="{% static 'styles/stock_list.css'%}"> -->
+    <style>
+        .logo {
+         
+            position: absolute;
+            height: 155px;
+            width: 119px;
+            bottom: 86vh;
+            left: 2px;
+        }
+        body {
+           
+            background-color:#a30517;
+            text-align: center;
+          
+              }
+                     
+        h1 {
+            color: #333;
+        }
+        .todo-container {
+            border: 3px solid black;
+            max-width: 100vw;
+            margin: 0 auto;
+            background-color:#fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 30px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+           
+            border: 1px solid black;
+        }
+        th{
+            background-color: #be717a;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        tr:nth-child(even) {
+            background-color: #ffd2d2
+        }
+        .todo-input {
+            width: 50%;
+            padding: 10px;
+            border: 1.5px solid black;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: #fff;
+        }
+        
+        .add-button {
+            /* left: 30px; */
+            margin-left: 690px;
+            margin-top: 10px;
+            display: block;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .add-button:hover {
+            background-color: #45a049;
+        }
+
+        input{
+            margin: 5px;
+        }
+        .header{
+            /* background-image: linear-gradient(rgba(101, 168, 215, 0.7),rgba(93, 154, 191, 0.7)); */
+            /* background-position: ; */
+        background-size: cover;
+        }
+        .nav-bar{
+            display: flex;
+          
+            /* align-items: end; */
+            padding-right: 30px;
+            justify-content: end;
+            margin-bottom: 25px;
+            /* margin-left: 20px; */
+        }
+        .nav-bar li{
+            list-style: none;
+            margin: 10px;
+            position: relative;
+            top: 8px;
+        }
+        .nav-bar li a{
+           color: white;
+            text-decoration: none;
+            font-weight:700;
+        }
+        .nav-bar li::after{
+            display: block;
+            width: 0;
+            content: '';
+            height: 3px;
+            
+            background-color: #0077b5;
+            transition: all 0.5s;
+        }
+        .nav-bar li:hover::after{
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="header">
+        <a href="/"><img src="{% static 'images/logo.svg'%}" alt="logo" class="logo" id="logo_main"></a>
+        <div class="nav-bar">
+        
+
+        <li><a href="/">HOME</a></li>
+        <li><a href="#">STOCK</a></li>
+        <li><a href="/portfolio">ABOUT</a></li>
+        <li><a href="/contact">CONTACT US</a></li>
+    
+</div>
+
+        <div class="todo-container">
+            <h1>Stock List</h1>
+            <form action="/stock_add" method="POST">
+                {% csrf_token %}
+                <input type="text" id="taskInput" class="todo-input" name="med_id" placeholder="Id">
+                <input type="text" id="taskInput" class="todo-input" name="medicine" placeholder="Medicine">
+                <input type="text" id="dueDateInput" class="todo-input" name="symptoms" placeholder="Symptoms">
+                <input type="text" id="dueDateInput" class="todo-input" name="Components" placeholder="Components">
+                <input type="text" id="dueDateInput" class="todo-input" name="price" placeholder="Price">
+                <!-- <input type="text" id="howToDoInput" class="todo-input" placeholder="How to do"> -->
+                <!-- <button onclick="addTask()" class="add-button">Add</button> -->
+                <button type="submit" class="add-button">Add</button>
+            </form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>S.NO</th>
+                        <th>Symptoms</th>
+                        <th>Medicine</th>
+                        <th>Components</th>
+                        <th>Price</th>
+                        <th>Last Update</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="taskList">
+                    {% for med in med_list  %}
+                    <tr>
+                        <td>{{med.sno}}</td>
+                        <td>{{med.medicines}}</td>
+                        <td>{{med.symptoms}}</td>
+                        <td>{{med.components}}</td>
+                        <td>{{med.price}}</td>
+                        <td>{{med.date}}</td>
+                        <td><a href="/update/{{med.sno}}" type="button"><button>update</button></a></td>
+                        
+                    </tr>
+                    {% endfor %}
+
+            
+                    
+                </tbody>
+            </table>
+        </div>
+    </section>
+        
+        
+</body>
+</html>

@@ -1,0 +1,46 @@
+sno,symptoms,medicine,components,price
+1,"cold, cough, sore_throat, stuffed_nose","Chest_on_Cold, Cofsils","cetrizine, paracetamol, pheynylephrine",35
+2,"headache, bodypains, fever, high_fever, mild_fever","Crocin_650_advance, Saridon, Amrutanjan_Headache_Roll-On, Dolo_650, Hifenac","paracetamol, propyphenazone, caffeine, aceclofenac",40
+3,"sneezing, cold, runny_nose, allergies",Levocet,levocetrizine,45
+4,"sneezing, cold, runny_nose, difficulty_breathing, sore_throat, stuffed_nose","Vicks_Inhaler, Vicks_Vaporub","karpoor, pudinah_ke_phool, wintergreen_oil",60
+5,"bodypains, headache, mild_fever, high_fever, fever, joint_pain","Dolo_650, Paracetamol_500mg",paracetamol,25
+6,"watery_eyes, eye_redness, dry_eyes","Zonticin_Eye/Ear_drops, Hyvet_Eye_drops","gentamicin, sodium_hyaluronate",150
+7,"nausea, vomiting, diarrhea, fever, bodypains, headache",Draminate_50mg,dymenhydrinate,33
+8,"diarrhea, motions","Imodium_Capsule, Lopide",loperamide,30
+9,"vomiting, nausea","Vomikind, Avomine","ondansetron, promethazine",35
+10,"Daily_Supplements, _low_immunity",Zincovit,"vitamins, minerals",90
+11,"low_immunity, dry_skin, energy++, weakness","ORSL_Liquid_Apple, ORSL_Liquid_Orange","vitamins, sodium, potassium, chloride",38
+12,"energy++, low_immunity",Tata_1mg_Multivitamin_Supreme,"vitamins, amino_acids, minerals, probiotics, natural_extracts",413
+13,"throat_infection, skin_rash",Ciprofloxacin_Usp,ciprofloxacin,10
+14,stomach_pain,Cyclopam,"dicyclomine, paracetamol",47
+15,high_BP,lisinopril,lisinopril,158
+16,"bodypains, joint_pain, back_pain, muscle_contraction","Moov_Pain-relief_Spray, Volini_Pain-relief_Spary, Moov_Pain_Relief_Cream","wintergreen_oil, nilgiri_oil, mint_extract, turpentine_oil",182
+17,constipation,Dulcoflex_5mg,Bisacodyl,23
+18,sleep_illness,Tata_1mg_Melatonin_10mg,"melatonin, vitamin_B6, magnesium_oxide",255
+19,"hair_fall, dandruff",Sesderma_Seskavel_Anti-Hairfall_Shampoo,"lactic_acid, panthenol, arginine",2350
+20,mouth_ulcer,Smyle_Mouth_Ulcer_Gel,"khadir, irimed, tagar, rasana, kushtha, lodhra, karpoor",81
+21,"stuffed_nose, nose_blockage, difficulty_breathing",Otrivin_Oxy_Fast_Relief_Adult_Nasal_Spray,oxymetazoline_hydrochloride,106
+22,"skin_rash, skin_redness, swelling, allergies","Candid_Dusting_Powder, Clocip_Dusting_Powder","Clotrimazole, talc",134
+23,swelling,"Dolo_650, Paracetamol_500mg",paracetamol,25
+24,hair_fall,Tata_1mg_Biotin-Capsules,biotin,304
+25,dandruff,Sebamed_Anti-Dandruff_Shampoo,"sodium_benzoate, hydroxypropyl_oxidised_starch, laureth_sulphate, phynoxyethanol",571
+26,mouth_ulcer,Orasore_Mouth_Ulcer_Tablet,"riboflavin, folic_acid, niacinamide, lactic_acid",54
+27,dry_skin,Minimalist_Marula_Face_Moisturizer,"glycerin, hyaluronic_acid, vitamin_E, vitamin_F, marula_oil",269
+28,inflammation,"Diclofenac, ketoprofen","diclofenac, ketoprofen",132
+29,"bodypains, headache, joint_pain, inflammation, back_pain","Diclofenac, Hifenac","diclofenac, aceclofenac, paracetamol",87
+30,ear_pain,"Zonticin_Eye/Ear_drops, Drohns_J-41_Ear-Ache_Drop","gentamicin, magnesium_phos, chamomilla, pultsatilla_nig, apis_mellifica",147
+31,dry_skin,Parachute_Advansed_Deep_Nourish_Body_Lotion,"coconut_milk, coconut_oil, coconut_butter, glycerin",134
+32,sleep_illness,TOWINO_Eye_Mask_for_better-Sleep,"eye_pads, cotton",219
+33,diapers,Bella_Baby_Happy_Diaper_Medium_80pcs,diapers,1799
+34,"wounds, firstaid",Hansaplast_Ventilated_all_purpose_bandage,bandages,2
+35,"wounds, firstaid",Tulips_White_Cotton_Balls_50pcs,cotton_balls,68
+36,"wounds, firstaid","Cotton_Roller_Bandage_10_Cms_x_4_Mts, Cotton_Crepe_Bandage_-_Roll_Sports_Wrist_Wrap_with_Elastic_Compression",bandage_roll,275
+37,"wounds, firstaid",Mupicin_Ointment,antibiotic_ointment,126
+38,cracked_heels,Krack_Heel_Repair_Foot_care_cream,natural_herbs,89
+39,"firstaid, wounds",Proberos_44Pcs_First_Aid_Kit,"scissors, cotton_balls, bandages, tape, bandage_roll, antibiotic_ointment, asprin, gloves, thermometer, manual, hand_sanitizer",1299
+40,"earbuds, ear_pain",TULIPS_Cotton_Ear_Buds_pack_of_100,ear_buds,104
+41,"firstaid, wounds",NICO_Fast_Pain_Relief_Gel,asprin,78
+42,"firstaid, wounds",Disposable_non-latex_gloves,gloves,15
+43,"firstaid, wounds",Omron_MC_246_Digital_Thermometer,thermometer,249
+44,"firstaid, wounds","Dettol_Hand_Saitizer, Lifeboy_Hand_Sanitizer",hand_sanitizer,49
+44,"firstaid, wounds","Dettol_Hand_Saitizer, Lifeboy_Hand_Sanitizer",hand_sanitizer,49
