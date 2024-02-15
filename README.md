@@ -1,9 +1,9 @@
 # Apka-Pharma
-# Pharma Management System
+
 
 ## Overview
 
-The Pharma Management System is a Django-based web application designed to streamline pharmaceutical inventory management and medicine recommendation processes. It offers functionalities for managing medicine stock, capturing symptoms, and recommending medicines based on input symptoms.
+Apka-Pharma is a Django-based web application designed to streamline pharmaceutical inventory management and medicine recommendation processes. It offers functionalities for managing medicine stock, capturing symptoms, and recommending medicines based on input symptoms.
 
 ## Features
 
