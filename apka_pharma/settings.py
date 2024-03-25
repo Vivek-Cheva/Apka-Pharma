@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-28!&s2kfk^2fw371u0q7gmpzyddbx#*rdw@49hk2lh#-&l49h(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','.vercel.app']
+ALLOWED_HOSTS = ['127.0.0.1','.vercel.app','.now.sh']
 
 
 # Application definition
@@ -79,10 +79,11 @@ WSGI_APPLICATION = 'apka_pharma.wsgi.app'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'pharma_data',
+        'NAME': 'railway',
         'USER': 'postgres',
-        'PASSWORD':'1234',
-        'HOST':'localhost'  
+        'PASSWORD':'EZEKfnyjBmlJoWdeYVnyvZgOXVvlMGEr',
+        'HOST':'roundhouse.proxy.rlwy.net',  
+        'PORT': '47137',
     }
 }
 
@@ -122,10 +123,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = 'static/'
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR,'static')
-]
-STATIC_ROOT = os.path.join(BASE_DIR,'assets')
+STATICFILES_DIRS = os.path.join(BASE_DIR,'static'),
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
