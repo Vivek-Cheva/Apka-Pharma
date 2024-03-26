@@ -79,11 +79,11 @@ WSGI_APPLICATION = 'apka_pharma.wsgi.app'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'railway',
+        'NAME': 'pharma_data',
         'USER': 'postgres',
-        'PASSWORD':'EZEKfnyjBmlJoWdeYVnyvZgOXVvlMGEr',
-        'HOST':'roundhouse.proxy.rlwy.net',  
-        'PORT': '47137',
+        'PASSWORD':'1234',
+        'HOST':'localhost',  
+        
     }
 }
 
@@ -124,7 +124,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = os.path.join(BASE_DIR,'static'),
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'assests', 'static')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
